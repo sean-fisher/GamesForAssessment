@@ -5311,7 +5311,7 @@ GameObject:
   - component: {fileID: 2139969772}
   - component: {fileID: 2139969773}
   m_Layer: 0
-  m_Name: Sign
+  m_Name: Mayor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5420,8 +5420,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiresButtonPressToInteract: 0
   dialogueToDisplay:
-  - SIGN TEXT
-  - 'Lorem ipsum dolor sit amet, consectetur adipiscing '
+  - Welcome to the town center! I'm the Mayor.
+  - Are you new here? I can give you a quick rundown of how things work around here.
+  - If you get lost, just make your way back here. This is a great place to start.
+  - By the way, have you seen our bulletin board? You can check out all the important
+    announcements and fun things to do!
+  - Don't forget to pop into the store. If you have coins, that is.
+  - Do you have any coins? You can earn some coins if you check out that bulletin
+    board.
+  - Try doing all of the things in order!
+  - Come find me again if you need help. Ta-ta!
   stopsPlayerWhileReading: 1
 --- !u!61 &2139969773
 BoxCollider2D:
