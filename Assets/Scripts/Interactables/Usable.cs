@@ -4,5 +4,6 @@ using UnityEngine;
 
 public interface Usable
 {
-    void Use(PlayerCharacter user);
+    bool Use(PlayerCharacter user);
+    bool StopUsing();
 }

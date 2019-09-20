@@ -10,10 +10,12 @@ public class HelplessAnimal : Interactable
 
         PlayerCharacter pc = interactor.GetComponent<PlayerCharacter>();
 
-        Balloon b = pc.pickedUpItem.GetComponent<Balloon>();
-        if (b)
-        {
-            StartRescue(pc, b);
+        if (pc != null && pc.pickedUpItem != null) {
+            Balloon b = pc.pickedUpItem.GetComponent<Balloon>();
+            if (b)
+            {
+                StartRescue(pc, b);
+            }
         }
     }
     public override void EndInteraction()

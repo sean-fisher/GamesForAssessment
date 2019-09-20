@@ -10,6 +10,7 @@ public class PlayerCharacter : MonoBehaviour
 
     Rigidbody2D rb;
     Vector2 movement;
+    bool isUsingObject;
 
     public Pickupable pickedUpItem;
     public Usable objectToUse;
@@ -45,6 +46,10 @@ public class PlayerCharacter : MonoBehaviour
             {
                 Interact();
             }
+            if (Input.GetButtonDown("Cancel"))
+            {
+                PressCancel();
+            }
         } else
         {
         }
@@ -68,7 +73,22 @@ public class PlayerCharacter : MonoBehaviour
     {
         if (objectToUse != null)
         {
+            isUsingObject = true;
             objectToUse.Use(this);
         }
+    }
+
+    void PressCancel()
+    {
+        if (isUsingObject && objectToUse != null)
+        {
+            if (objectToUse.StopUsing()) {
+                StopUsingObject();
+            }
+        }
+    }
+
+    public void StopUsingObject() {
+        isUsingObject = false;
     }
 }

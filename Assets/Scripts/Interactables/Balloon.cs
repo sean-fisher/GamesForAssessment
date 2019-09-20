@@ -12,18 +12,32 @@ public class Balloon : Pickupable, Usable
     Vector3 initialPosition;
     float inflationProgess;
 
-    public void Use(PlayerCharacter user)
+    PlayerCharacter currentUser;
+
+    bool Usable.Use(PlayerCharacter user)
     {
+        currentUser = user;
         inflationProgess += inflationSpeed;
 
         if (inflationProgess > 1)
         {
             Pop();
             user.objectToUse = null;
+            ((Usable) this).StopUsing();
+            return false;
         } else
         {
             //Inflate(inflationCurve.Evaluate(inflationProgess));
         }
+        return true;
+    }
+
+    bool Usable.StopUsing() {
+        if (currentUser) {
+            currentUser.moveDisabled = false;
+        }
+        Debug.Log("Stop using!");
+        return true;
     }
 
     // Start is called before the first frame update
