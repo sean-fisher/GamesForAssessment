@@ -6,9 +6,13 @@ public class PlayerCharacter : MonoBehaviour
 {
     public float maxSpeed;
     public bool controlDisabled;
+    public bool moveDisabled;
 
     Rigidbody2D rb;
     Vector2 movement;
+
+    public Pickupable pickedUpItem;
+    public Usable objectToUse;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -26,16 +30,23 @@ public class PlayerCharacter : MonoBehaviour
         movement = Vector3.zero;
         if (!controlDisabled)
         {
-            Vector2 input = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            if (input.magnitude > 1)
+            if (!moveDisabled)
             {
-                input = input.normalized;
+                Vector2 input = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+                if (input.magnitude > 1)
+                {
+                    input = input.normalized;
+                }
+
+                movement = input * maxSpeed;
             }
 
-            movement = input * maxSpeed;
+            if (Input.GetButtonDown("Submit"))
+            {
+                Interact();
+            }
         } else
         {
-            rb.velocity = Vector3.zero;
         }
     }
 
@@ -50,6 +61,14 @@ public class PlayerCharacter : MonoBehaviour
         if (interactable)
         {
             interactable.StartInteraction(this.gameObject);
+        }
+    }
+
+    void Interact()
+    {
+        if (objectToUse != null)
+        {
+            objectToUse.Use(this);
         }
     }
 }
