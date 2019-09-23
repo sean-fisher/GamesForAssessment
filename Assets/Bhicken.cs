@@ -21,23 +21,31 @@ public class Bhicken : MonoBehaviour
 {
 
     private bool dirRight = true;
-    public float speed = 2.0f;
+    public float distanceToTravel = 2.0f;
+    public float progress = 0.0f;
+    public float movementSpeed = 2.0f;
 
     void Update()
     {
+        progress += Time.deltaTime / distanceToTravel;
+
+        if (progress > 1)
+        {
+            dirRight = !dirRight;
+            progress = 0;
+        }
+
         if (dirRight)
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
         else
-            transform.Translate(-Vector2.right * speed * Time.deltaTime);
+            transform.Translate(-Vector2.right * movementSpeed * Time.deltaTime);
 
-        if (transform.position.x >= 4.0f)
-        {
-            dirRight = false;
-        }
+    }
 
-        if (transform.position.x <= -4)
-        {
-            dirRight = true;
-        }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collide with " + collision.gameObject.name);
+        dirRight = !dirRight;
+        progress = 0;
     }
 }
