@@ -15,7 +15,11 @@ public class BulletinBoard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    Debug.Log("Enter");
+        //    BulletinPanel.SetActive(!BulletinPanel.activeSelf);
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,4 +29,13 @@ public class BulletinBoard : MonoBehaviour
             BulletinPanel.SetActive(true);
         } 
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.GetComponent<PlayerCharacter>())
+        {
+            BulletinPanel.SetActive(false);
+        }
+    }
+
 }
