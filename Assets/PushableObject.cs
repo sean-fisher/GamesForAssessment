@@ -21,9 +21,14 @@ public class PushableObject : MonoBehaviour {
             var delta = selfPosition - otherPosition;
 
             if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y)) {
-                StartCoroutine(this.Push((Vector2)selfPosition + new Vector2(Mathf.Sign(delta.x) * 1, 0)));
+                if (!Physics.Raycast(selfPosition, (Vector3)(Vector2.right * Mathf.Sign(delta.x)), 5)) {
+                // if (!Physics.Raycast(selfPosition, new Vector3(Mathf.Sign(delta.x) * 1, 0, 0), 5)) {
+                    StartCoroutine(this.Push((Vector2)selfPosition + new Vector2(Mathf.Sign(delta.x) * 1, 0)));
+                }
             } else {
-                StartCoroutine(this.Push((Vector2)selfPosition + new Vector2(0, Mathf.Sign(delta.y) * 1)));
+                if (!Physics.Raycast(selfPosition, new Vector3(0, Mathf.Sign(delta.y) * 1, 0), 5)) {
+                    StartCoroutine(this.Push((Vector2)selfPosition + new Vector2(0, Mathf.Sign(delta.y) * 1)));
+                }
             }
         }
     }
