@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: 86aef2daade224591b69ce581cf44c33
+  - enabled: 1
+    path: Assets/Scenes/ForestRiver.unity
+    guid: 6dbf893ef97111c4284427b2a56ad34f
+  - enabled: 1
+    path: Assets/Scenes/ForestScene.unity
+    guid: fec7cbb80a4731244910af5a4e834452
+  - enabled: 1
+    path: Assets/Scenes/SbRoom.unity
+    guid: 7c9952a421f894191a0548c42751f47a
+  - enabled: 1
+    path: Assets/Scenes/Park.unity
+    guid: 46ab67add3ebe4d90b5d8c49656f5438
   m_configObjects: {}
