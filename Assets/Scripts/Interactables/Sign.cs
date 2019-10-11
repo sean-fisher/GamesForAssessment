@@ -17,7 +17,7 @@ public class Sign : Interactable
             pc.controlDisabled = true;
         }
 
-        GameManager.GetMainUI().DisplayDialogue(dialogueToDisplay);
+        GameManager.GetMainUI().DisplayDialogue(GetTextToDisplay());
         GameManager.GetMainUI().onFinishDialogue += EndInteraction;
     }
 
@@ -30,5 +30,9 @@ public class Sign : Interactable
         {
             pc.controlDisabled = false;
         }
+    }
+
+    public virtual string[] GetTextToDisplay() {
+        return dialogueToDisplay;
     }
 }

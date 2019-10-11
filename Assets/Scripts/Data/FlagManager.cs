@@ -11,6 +11,11 @@ public class FlagManager : MonoBehaviour
     }
 
     public static void SetFlag(int flag, bool value) {
+        if (flags == null) Initialize();
         flags[flag] = value;
+    }
+    public static bool IsFlagSet(int flag) {
+        if (flags == null) Initialize();
+        return flags[flag];
     }
 }
