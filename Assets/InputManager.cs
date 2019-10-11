@@ -43,7 +43,7 @@ public class InputManager : MonoBehaviour
             if (touches.Length > 0)
             {
                 var hit = touches[0];
-                if (hit.transform != null)
+                if (hit.transform != null && hit.transform.gameObject.CompareTag("draggable"))
                 {
                     draggingItem = true;
                     draggedObject = hit.transform.gameObject;
