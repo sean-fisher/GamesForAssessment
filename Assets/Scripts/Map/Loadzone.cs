@@ -24,21 +24,10 @@ public class Loadzone : MonoBehaviour
     {
         if (other.GetComponent<PlayerCharacter>())
         {
-            if (true) {
-
-                SceneManager.LoadScene(MapLayout.GetRoomNextTo(SceneManager.GetActiveScene().name, whichSideOfRoom));
-            } else {
-                if (SceneToLoad != "")
-                {
-                    SceneManager.LoadScene(SceneToLoad);
-                } else
-                {
-                    Debug.Log("Scene to Load has not been set!");
-                }
-            }
+            SceneManager.LoadScene(MapLayout.GetRoomNextTo(SceneManager.GetActiveScene().name, whichSideOfRoom));
         } else
         {
-            Debug.Log("Non player character entered load zone");
+            //Debug.Log("Non player character entered load zone");
         }
     }
 

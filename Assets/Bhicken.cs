@@ -3,20 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//public float speed;
-
-
-// Start is called before the first frame update
-
-
-//// Update is called once per frame
-//void Update()
-//{
-//    transform.position += Time.deltaTime * new Vector3(speed, 0, 0); //every frame add one unit on the x to position
-
-
-//}
-
 public class Bhicken : MonoBehaviour
 {
 
@@ -24,6 +10,7 @@ public class Bhicken : MonoBehaviour
     public float distanceToTravel = 2.0f;
     public float progress = 0.0f;
     public float movementSpeed = 2.0f;
+    public SpriteRenderer sprite; 
 
     void Update()
     {
@@ -44,8 +31,17 @@ public class Bhicken : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collide with " + collision.gameObject.name);
+        //Debug.Log("Collide with " + collision.gameObject.name);
         dirRight = !dirRight;
         progress = 0;
+    }
+
+    public Color getColor() {
+        //if (sprite != null)
+        //{
+            return sprite.color; 
+       // } else {
+         //   return new Color();
+       // }
     }
 }
