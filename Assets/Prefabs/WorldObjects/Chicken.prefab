@@ -131,6 +131,7 @@ MonoBehaviour:
   distanceToTravel: 2
   progress: 0
   movementSpeed: 2
+  sprite: {fileID: 8751814388328096854}
 --- !u!50 &8751814388684419126
 Rigidbody2D:
   serializedVersion: 4

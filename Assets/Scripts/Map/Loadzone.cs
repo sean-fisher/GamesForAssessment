@@ -28,11 +28,11 @@ public class Loadzone : MonoBehaviour
                 SceneManager.LoadScene(SceneToLoad);
             } else
             {
-                Debug.Log("Scene to Load has not been set!");
+                //Debug.Log("Scene to Load has not been set!");
             }
         } else
         {
-            Debug.Log("Non player character entered load zone");
+            //Debug.Log("Non player character entered load zone");
         }
     }
 }
