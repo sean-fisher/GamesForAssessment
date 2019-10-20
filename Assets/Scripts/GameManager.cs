@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
                 // Do any UI initialization here
             }
         }
+
+        MapLayout.LoadMapFile();
     }
 
     public static MainUI GetMainUI()
