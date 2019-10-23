@@ -9,6 +9,7 @@ public class MemoryTile : MonoBehaviour
     public Sprite cardBack;
     public static GameObject lastCardFlipped;
     public static GameObject prevCard;
+    public static int wrongMatch = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -36,15 +37,18 @@ public class MemoryTile : MonoBehaviour
 
     public void CheckMatch() {
         if (prevCard) {
+            // if the cards match
             if (lastCardFlipped.GetComponent<SpriteRenderer>().sprite == prevCard.GetComponent<SpriteRenderer>().sprite) {
                 // make the cards disappear if right match
                 lastCardFlipped.gameObject.SetActive(false);
                 prevCard.SetActive(false);
-                prevCard = null;
-                lastCardFlipped = null;
-            }  
-            prevCard.GetComponent<SpriteRenderer>().sprite = cardBack;
-            lastCardFlipped.GetComponent<SpriteRenderer>().sprite = cardBack;
+            }  else {
+                wrongMatch++; // add to the wrong match count
+                Debug.Log("Wrong Match = " + wrongMatch);
+                // flip cards back over if wrong match
+                prevCard.GetComponent<SpriteRenderer>().sprite = cardBack;
+                lastCardFlipped.GetComponent<SpriteRenderer>().sprite = cardBack;
+            }
             prevCard = null;
             lastCardFlipped = null;         
         }
