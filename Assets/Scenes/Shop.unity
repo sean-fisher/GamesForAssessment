@@ -5703,8 +5703,9 @@ MonoBehaviour:
   requiresButtonPressToInteract: 0
   dialogueToDisplay:
   - Welcome to the town shop!
-  - "Here, you can\u2014oh no! Stop that thief!"
+  - "I'm the shopkeeper here. You can\u2014oh no! Stop that thief!"
   - They're running out the door with our coins!
+  - Will you help me catch them?
   stopsPlayerWhileReading: 1
 --- !u!61 &1843872131
 BoxCollider2D:
@@ -5790,7 +5791,7 @@ GameObject:
   - component: {fileID: 2139969770}
   - component: {fileID: 2139969772}
   - component: {fileID: 2139969773}
-  - component: {fileID: 2139969774}
+  - component: {fileID: 2139969775}
   m_Layer: 0
   m_Name: Shopkeeper
   m_TagString: Untagged
@@ -5899,10 +5900,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001b81764b1309148adaffed2108d377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiresButtonPressToInteract: 0
+  requiresButtonPressToInteract: 1
   dialogueToDisplay:
-  - Welcome to the shop!
-  - You can purchase things with coins here.
+  - Hello, again!
+  - As a reminder, you can purchase things with coins here.
   - Everything you see can be purchased.
   - Feel free to browse. I'll be around.
   stopsPlayerWhileReading: 1
@@ -5932,7 +5933,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
---- !u!114 &2139969774
+--- !u!114 &2139969775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5944,8 +5945,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001b81764b1309148adaffed2108d377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiresButtonPressToInteract: 0
-  dialogueToDisplay: []
+  requiresButtonPressToInteract: 1
+  dialogueToDisplay:
+  - Hi, again! I noticed you in here earlier.
+  - By the way, did you notice that person trying to steal my merchandise?
+  - Please, I would appreciate your help chasing after them!
   stopsPlayerWhileReading: 1
 --- !u!1001 &2687154789300030240
 PrefabInstance:
