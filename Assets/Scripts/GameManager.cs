@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     PlayerCharacter ActivePlayerCharacter;
     MainUI MainUI;
 
+    // Seconds before the game forcibly ends
+    public float gameTimeoutTime = 300;
+    float timeSinceGameStart;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,5 +58,18 @@ public class GameManager : MonoBehaviour
     public static MainUI GetMainUI()
     {
         return singleton.MainUI;
+    }
+
+    void Update() {
+        timeSinceGameStart += Time.deltaTime;
+
+        if (timeSinceGameStart > gameTimeoutTime) {
+            Debug.Log("Time over!");
+            EndGame();
+        }
+    }
+
+    void EndGame() {
+        Debug.Log("Ending Game");
     }
 }

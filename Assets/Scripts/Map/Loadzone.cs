@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Loadzone : MonoBehaviour
 {
+    public bool loadSpecifiedRoomInsteadOfCardinal;
     public string SceneToLoad;
     public Cardinal whichSideOfRoom;
 
@@ -24,7 +25,12 @@ public class Loadzone : MonoBehaviour
     {
         if (other.GetComponent<PlayerCharacter>())
         {
-            SceneManager.LoadScene(MapLayout.GetRoomNextTo(SceneManager.GetActiveScene().name, whichSideOfRoom));
+            if (loadSpecifiedRoomInsteadOfCardinal) {
+                SceneSwitcher.Singleton().SwitchToScene(SceneToLoad);
+            } else {
+                string s = MapLayout.GetRoomNextTo(SceneManager.GetActiveScene().name, whichSideOfRoom);
+                SceneSwitcher.Singleton().SwitchToScene(s);
+            }
         } else
         {
             //Debug.Log("Non player character entered load zone");

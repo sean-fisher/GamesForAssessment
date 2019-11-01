@@ -25,7 +25,7 @@ public class Loadzone : MonoBehaviour
         {
             if (SceneToLoad != "")
             {
-                SceneManager.LoadScene(SceneToLoad);
+                SceneSwitcher.Singleton().SwitchToScene(SceneToLoad);
             } else
             {
                 Debug.Log("Scene to Load has not been set!");

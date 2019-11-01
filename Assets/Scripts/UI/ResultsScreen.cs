@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IPersonalityMeasurer : MonoBehaviour
+public class ResultsScreen : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +16,7 @@ public class IPersonalityMeasurer : MonoBehaviour
         
     }
 
-    public virtual void CalculateResults(AllGameStats stats) {
-
-    }
-
-    public virtual string GetResultsAsString() {
-        return "Not implemented yet";
+    public void DisplayResults() {
+        
     }
 }
