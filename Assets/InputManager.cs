@@ -5,6 +5,7 @@ public class InputManager : MonoBehaviour
     private bool draggingItem = false;
     private GameObject draggedObject;
     private Vector2 touchOffset;
+    public static bool ifFinished = false; 
 
     void Update()
     {
@@ -31,6 +32,10 @@ public class InputManager : MonoBehaviour
 
     private void DragOrPickUp()
     {
+        if (ifFinished)
+        {
+            return; 
+        }
         var inputPosition = CurrentTouchPosition;
 
         if (draggingItem)
