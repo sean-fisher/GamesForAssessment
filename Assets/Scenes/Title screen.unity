@@ -231,8 +231,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -30}
-  m_SizeDelta: {x: -421.5, y: -287}
+  m_AnchoredPosition: {x: 0, y: -39}
+  m_SizeDelta: {x: -364.11, y: -238.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366632262
 MonoBehaviour:
@@ -4832,6 +4832,7 @@ MonoBehaviour:
     type: 3}
   MainUIPrefab: {fileID: 8981666747655906244, guid: b0d63fb95865fd942b087f47a01f49fe,
     type: 3}
+  gameTimeoutTime: 300
 --- !u!4 &2056583853
 Transform:
   m_ObjectHideFlags: 0
@@ -5051,6 +5052,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 8881935014166533774, guid: 7de876c6bed2ae042a3b4f03d97b90ee,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8724592737905877471, guid: 7de876c6bed2ae042a3b4f03d97b90ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5105,11 +5111,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8881935014166533774, guid: 7de876c6bed2ae042a3b4f03d97b90ee,
-        type: 3}
-      propertyPath: maxSpeed
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
