@@ -28564,6 +28564,11 @@ PrefabInstance:
       propertyPath: sprite
       value: 
       objectReference: {fileID: 1177726897}
+    - target: {fileID: 7118045889476194534, guid: 7fe291c4061214ae887a811d9f951886,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe291c4061214ae887a811d9f951886, type: 3}
 --- !u!1001 &281373893
@@ -30568,6 +30573,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe291c4061214ae887a811d9f951886, type: 3}
+--- !u!1 &1727226203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7148067389905097318, guid: 898032c640ae05341bf94f5e8e4309de,
+    type: 3}
+  m_PrefabInstance: {fileID: 6839149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1727226204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727226203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece95c55692894ae389730dd806ca43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTimeoutTime: 10
 --- !u!1 &1835774959
 GameObject:
   m_ObjectHideFlags: 0

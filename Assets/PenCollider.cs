@@ -48,12 +48,16 @@ public class PenCollider : MonoBehaviour {
             if (test == blue) {   //blue
 
                 blueScore++;
+                Debug.Log("Color is blue");
+                Debug.Log("Score is" + blueScore);
 
             }
 
             if (test == pink) {   //pink
 
                 pinkScore++;
+                Debug.Log("Color is pink");
+                Debug.Log("Score is" + pinkScore);
 
 
             }
@@ -61,6 +65,8 @@ public class PenCollider : MonoBehaviour {
             if (test == yellow)    //yellow
  {
                 yellowScore++;
+                Debug.Log("Color is yellow");
+                Debug.Log("Score is" + yellowScore);
             }
 
 
