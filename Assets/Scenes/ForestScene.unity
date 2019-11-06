@@ -1824,8 +1824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd523cc945a189b4685764d66850152e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: -23, y: -15}
-  cameraBounds: {x: 60, y: 40}
+  startPosition: {x: -20.9, y: -14.7}
+  cameraBounds: {x: 42.8, y: 29.25}
   thingToFollow: {fileID: 924887196}
 --- !u!1 &525065757
 GameObject:
