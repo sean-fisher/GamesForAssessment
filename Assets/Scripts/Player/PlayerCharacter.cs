@@ -9,14 +9,18 @@ public class PlayerCharacter : MonoBehaviour
     public bool moveDisabled;
 
     Rigidbody2D rb;
+    Animator anim;
     Vector2 movement;
     bool isUsingObject;
 
     public Pickupable pickedUpItem;
     public Usable objectToUse;
 
+
+
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Start is called before the first frame update
@@ -33,13 +37,23 @@ public class PlayerCharacter : MonoBehaviour
         {
             if (!moveDisabled)
             {
-                Vector2 input = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+                Vector2 input = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
                 if (input.magnitude > 1)
                 {
                     input = input.normalized;
                 }
 
                 movement = input * maxSpeed;
+
+                if (input.sqrMagnitude > 0) {
+                    anim.SetFloat("XSpeed", input.x);
+                    anim.SetFloat("YSpeed", input.y);
+                    anim.SetFloat("Gait", 1);
+                }
+                else {
+                    anim.SetFloat("Gait", 0);
+
+                }
             }
 
             if (Input.GetButtonDown("Submit"))
