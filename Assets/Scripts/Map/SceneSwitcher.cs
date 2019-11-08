@@ -40,4 +40,29 @@ public class SceneSwitcher : MonoBehaviour
         currentSceneName = sceneName;
         SceneManager.LoadScene(sceneName);
     }
+
+    public void GotoShopScene()
+    {
+        SceneManager.LoadScene("Shop");
+    }
+
+    public void GotoForestRiverScene()
+    {
+        SceneManager.LoadScene("ForestRiver");
+    }
+
+    public void GotoForestScene()
+    {
+        SceneManager.LoadScene("ForestScene");
+    }
+
+    public void GotoSbRoomScene()
+    {
+        SceneManager.LoadScene("SbRoom");
+    }
+
+    public void GotoParkScene()
+    {
+        SceneManager.LoadScene("Park");
+    }
 }
