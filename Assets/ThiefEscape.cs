@@ -1,48 +1,46 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using System.Collections;
 
 public class ThiefEscape : MonoBehaviour
 {
-
-    private bool dirRight = true;
-    public float distanceToTravel = 2.0f;
-    public float progress = 0.0f;
-    public float movementSpeed = 2.0f;
-    public SpriteRenderer sprite;
+    private Vector3 pos1 = new Vector3(4, -2, 0);
+    private Vector3 pos2 = new Vector3(8, -2, 0);
+    public float speed = 1.0f;
+    private bool nocollision = true;
+    //private string collidedobject;
 
     void Update()
     {
-        progress += Time.deltaTime / distanceToTravel;
-
-        if (progress > 1)
+        if (nocollision)
         {
-            dirRight = !dirRight;
-            progress = 0;
+            transform.position = Vector3.Lerp(pos1, pos2, (Mathf.Sin(speed * Time.time) + 1.0f) / 2.0f);
         }
 
-        if (dirRight)
-            transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
-        else
-            transform.Translate(-Vector2.right * movementSpeed * Time.deltaTime);
-
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collide)
     {
-        //Debug.Log("Collide with " + collision.gameObject.name);
-        dirRight = !dirRight;
-        progress = 0;
+        if (collide.gameObject.name == "PlayerCharacter")
+        {
+            //Rigidbody rbdy = collision.gameObject.GetComponent<Rigidbody>();
+
+            //Stop Moving/Translating
+            GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+
+            nocollision = false;
+
+            ////Stop rotating
+            //rbdy.angularVelocity = Vector3.zero;
+
+        }
     }
 
-    public Color getColor()
-    {
-        //if (sprite != null)
-        //{
-        return sprite.color;
-        // } else {
-        //   return new Color();
-        // }
-    }
+    //void OnCollisionEnter(UnityEngine.Collision hit)
+    //{
+    //    collidedobject = hit.gameObject.name;
+    //    if (collidedobject == "PlayerCharacter")
+    //    {
+    //        nocollision = false;
+    //    }
+    //}
 }
