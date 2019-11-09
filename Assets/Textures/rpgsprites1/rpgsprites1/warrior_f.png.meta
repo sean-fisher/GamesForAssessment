@@ -45,7 +45,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -86,421 +86,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_0'
+      name: healer_f_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda2527bafc658740b09ea3e3c220d00
+      internalID: -4554514618764200062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healer_f_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 108
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bb2218ec7d3ff4498a9022e31cbaec
+      internalID: 1122353702388440875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healer_f_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 108
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5f8cc4f5c5a8847b62cdccdd5f7810
+      internalID: -5327368235344095771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healer_f_3
       rect:
         serializedVersion: 2
         x: 0
         y: 72
-        width: 8
-        height: 8
-      alignment: 6
+        width: 32
+        height: 36
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cb78967da3ca014681f7e4a1d07b27e
-      internalID: 664025853279417895
+      spriteID: 66aab61195312cd4f8ad8cd916830563
+      internalID: -3614836422308260753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_1'
+      name: healer_f_4
       rect:
         serializedVersion: 2
-        x: 8
+        x: 32
         y: 72
-        width: 8
-        height: 8
-      alignment: 6
+        width: 32
+        height: 36
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a8a19cab5bb052458f4f6c3c4f80f1e
-      internalID: -7039516655460366867
+      spriteID: 6995605c1b83b4442b45e466efdf71b2
+      internalID: 4936138484310094650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_2'
+      name: healer_f_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 72
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc6f0446abc03b449e454844ad885e2
+      internalID: 8974497213860845554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healer_f_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 8
-        height: 8
-      alignment: 6
+        y: 36
+        width: 32
+        height: 36
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed3d63a0921cadd40adcfb18220eb1e3
-      internalID: 648138215333337931
+      spriteID: 577cad577e0817740a949fe3e63853c5
+      internalID: -3895615427043231057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_3'
+      name: healer_f_7
       rect:
         serializedVersion: 2
-        x: 8
-        y: 64
-        width: 8
-        height: 8
-      alignment: 6
+        x: 32
+        y: 36
+        width: 32
+        height: 36
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7db68c3f2576f2847a6277d43356e1c3
-      internalID: 553323054278431225
+      spriteID: 60f09de84d45f284d9825a52e0c85790
+      internalID: 6586815544308170364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_4'
+      name: healer_f_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 56
-        width: 8
-        height: 8
-      alignment: 6
+        x: 64
+        y: 36
+        width: 32
+        height: 36
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67aa665d3d09f7e469cc4d6e1c563520
-      internalID: 4822601831273268048
+      spriteID: ffa985a51670f7c4aa044867ce6af762
+      internalID: -4877966692284227170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_5'
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 56
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4090268cce85704b90f3ece655517c1
-      internalID: -307463220674953610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_6'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 826d04c02a40f864facaf95021e74c61
-      internalID: -3251393946256344021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_7'
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 48
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8703b0de778a9c440a3b5491cab9e7c8
-      internalID: -4968933828507415161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_8'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 40
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dea8b8a9f8182a34e86f7b2d3a949f04
-      internalID: -3641615497326940868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_9'
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 40
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddbe6858640491f4d8f78bd618490676
-      internalID: 5476056852919016236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_10'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9780caf09526244f9ea9461e7287d96
-      internalID: 8617757668671595293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_11'
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 32
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cad3a8a89f0c57743b5a4bd96b516303
-      internalID: 7952978035402496594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_12'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 24
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41e1fbc5a6037d0498d34cc13b1efb61
-      internalID: -3955413150708349808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_13'
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 24
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24f0b27aadc1e5249b7e514bb1c6759c
-      internalID: -5629826348269315701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_14'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d95905bd2240734a97c773bdecd3b9f
-      internalID: -1533022225907257713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_15'
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 16
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 298a8c6b2822ea34aade27ebd31e6c50
-      internalID: 1084532254940383925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_16'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 8
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdb7bd7e4253c664e81be2a9e6432883
-      internalID: 458641752377212494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_17'
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 8
-        width: 8
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0f87582cc96ddc4cb419a2c682af3b3
-      internalID: 9095196793859397844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_18'
+      name: healer_f_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 8
-        height: 8
-      alignment: 6
+        width: 32
+        height: 36
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e40d0291d7fabcc439add11f2196b7d9
-      internalID: -8162517731468445121
+      spriteID: 6c9d5be8ea120f844983a45ad47ebbf1
+      internalID: 1211069477251174031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[A]Grass1-Dirt2_pipo_19'
+      name: healer_f_10
       rect:
         serializedVersion: 2
-        x: 8
+        x: 32
         y: 0
-        width: 8
-        height: 8
-      alignment: 6
+        width: 32
+        height: 36
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9a1c9b502aef5049984165044366424
-      internalID: -8358221417912463359
+      spriteID: 1c213355d24b9b743b0ba63ec3cbf4f3
+      internalID: 4445906209134194194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healer_f_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5381e73208c0e3d42ad9a363f53a9910
+      internalID: 7616860525756695655
       vertices: []
       indices: 
       edges: []
