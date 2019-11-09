@@ -36,7 +36,7 @@ public class MemoryTile : MonoBehaviour
         lastCardFlipped = this.gameObject;
 
         // check to see if cards match after a delay
-        Invoke("CheckMatch", 2);
+        Invoke("CheckMatch", (float)1.5);
     }
 
     public void CheckMatch() {
