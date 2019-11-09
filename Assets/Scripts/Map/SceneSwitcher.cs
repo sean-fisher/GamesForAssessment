@@ -7,11 +7,16 @@ public class SceneSwitcher : MonoBehaviour
 {
     static SceneSwitcher singleton;
     public static SceneSwitcher Singleton() {
+        if (singleton == null) {
+            singleton = new SceneSwitcher();
+        }
         return singleton;
     }
 
     System.DateTime timeEnteredCurrentRoom;
+    string lastSceneName;
     string currentSceneName;
+    Cardinal lastLoadzoneCardinal;
 
     //public string SceneToLoad;
     // Start is called before the first frame update
@@ -36,12 +41,42 @@ public class SceneSwitcher : MonoBehaviour
 
     public void SwitchToScene(string sceneName) {
 
+        lastSceneName = SceneManager.GetActiveScene().name;
         MetricsManager.Singleton().AddRoomTime(
             currentSceneName, 
             (float) System.DateTime.Now.Subtract(timeEnteredCurrentRoom).TotalSeconds);
 
         currentSceneName = sceneName;
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void PrepareToPlacePlayerAfterLoad() {
+        SceneManager.sceneLoaded += PlacePlayerAfterLoadNewScene;
+    }
+
+    public void PlacePlayerAfterLoadNewScene(Scene scene, LoadSceneMode mode) {
+        
+        Loadzone whereToLoad = FindLoadzoneToSpawnAt(lastSceneName, currentSceneName);
+        whereToLoad.gameObject.SetActive(false);
+        GameObject.FindObjectOfType<PlayerCharacter>().transform.position = whereToLoad.transform.position;
+    }
+
+    public static Loadzone FindLoadzoneToSpawnAt(string sceneEnteredFrom, string currentSceneName) {
+        var zones = GameObject.FindObjectsOfType<Loadzone>();
+        foreach (Loadzone zone in zones) {
+            if (zone.loadSpecifiedRoomInsteadOfCardinal) {
+                if (sceneEnteredFrom == zone.SceneToLoad) {
+                    return zone;
+                }
+            } else {
+                
+                if (sceneEnteredFrom == MapLayout.GetRoomNextTo(currentSceneName, zone.whichSideOfRoom)) {
+                    //GetOppositeCardinal(zone.whichSideOfRoom)) {
+                    return zone;
+                }
+            }
+        }
+        return null;
     }
 
     public void GotoShopScene()

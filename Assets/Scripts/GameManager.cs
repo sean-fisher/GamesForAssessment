@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         if (ActivePlayerCharacter == null)
         {
             ActivePlayerCharacter = FindObjectOfType<PlayerCharacter>();
-            if (ActivePlayerCharacter == null)
+            if (ActivePlayerCharacter == null && PlayerCharacterPrefab != null)
             {
                 ActivePlayerCharacter = GameObject.Instantiate(PlayerCharacterPrefab);
 
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         if (MainUI == null)
         {
             MainUI = FindObjectOfType<MainUI>();
-            if (MainUI == null)
+            if (MainUI == null && MainUIPrefab != null)
             {
                 MainUI = GameObject.Instantiate(MainUIPrefab);
 

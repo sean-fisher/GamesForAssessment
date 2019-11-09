@@ -31,6 +31,7 @@ public class Loadzone : MonoBehaviour
                 string s = MapLayout.GetRoomNextTo(SceneManager.GetActiveScene().name, whichSideOfRoom);
                 SceneSwitcher.Singleton().SwitchToScene(s);
             }
+            SceneSwitcher.Singleton().PrepareToPlacePlayerAfterLoad();
         } else
         {
             //Debug.Log("Non player character entered load zone");
@@ -39,8 +40,6 @@ public class Loadzone : MonoBehaviour
 
     void GuessCardinal() {
         Loadzone[] allLoadZonesInRoom = GameObject.FindObjectsOfType<Loadzone>();
-
-
 
         Loadzone eastZone = allLoadZonesInRoom[0];
         Loadzone northZone = allLoadZonesInRoom[0];
@@ -77,5 +76,18 @@ public class Loadzone : MonoBehaviour
         northZone.whichSideOfRoom = Cardinal.NORTH;
         westZone.whichSideOfRoom  = Cardinal.WEST;
         southZone.whichSideOfRoom = Cardinal.SOUTH;
+    }
+
+    static Cardinal GetOppositeCardinal(Cardinal cardinal) {
+        switch(cardinal) {
+            case (Cardinal.EAST):
+            return Cardinal.WEST;
+            case (Cardinal.NORTH):
+            return Cardinal.SOUTH;
+            case (Cardinal.WEST):
+            return Cardinal.EAST;
+            default:
+            return Cardinal.NORTH;
+        }
     }
 }
