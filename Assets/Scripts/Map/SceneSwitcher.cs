@@ -8,7 +8,7 @@ public class SceneSwitcher : MonoBehaviour
     static SceneSwitcher singleton;
     public static SceneSwitcher Singleton() {
         if (singleton == null) {
-            singleton = new SceneSwitcher();
+            //singleton = new SceneSwitcher();
         }
         return singleton;
     }
@@ -57,8 +57,9 @@ public class SceneSwitcher : MonoBehaviour
     public void PlacePlayerAfterLoadNewScene(Scene scene, LoadSceneMode mode) {
         
         Loadzone whereToLoad = FindLoadzoneToSpawnAt(lastSceneName, currentSceneName);
-        whereToLoad.gameObject.SetActive(false);
-        GameObject.FindObjectOfType<PlayerCharacter>().transform.position = whereToLoad.transform.position;
+        //whereToLoad.gameObject.SetActive(false);
+        GameObject.FindObjectOfType<PlayerCharacter>().transform.position = whereToLoad.exitPosition;
+        SceneManager.sceneLoaded -= PlacePlayerAfterLoadNewScene;
     }
 
     public static Loadzone FindLoadzoneToSpawnAt(string sceneEnteredFrom, string currentSceneName) {

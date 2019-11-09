@@ -75,7 +75,7 @@ public class MapLayout : MonoBehaviour
     }
 
     public static string GetRoomNextTo(string currentRoomName, Cardinal directionOfNextRoom) {
-        for (int r = 0; r < roomArray.Length; r++) {
+        for (int r = 0; r < roomArray.GetLength(0); r++) {
             for (int c = 0; c < roomArray.GetLength(1); c++) {
                 if (roomArray[r,c] == currentRoomName) {
 

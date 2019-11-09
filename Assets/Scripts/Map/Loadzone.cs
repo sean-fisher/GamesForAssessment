@@ -9,11 +9,15 @@ public class Loadzone : MonoBehaviour
     public bool loadSpecifiedRoomInsteadOfCardinal;
     public string SceneToLoad;
     public Cardinal whichSideOfRoom;
+    public Vector3 exitPosition;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        GuessCardinal();
+        if (!loadSpecifiedRoomInsteadOfCardinal) {
+            GuessCardinal();
+        }
+        exitPosition = transform.GetChild(0).position;
     }
 
     // Update is called once per frame
