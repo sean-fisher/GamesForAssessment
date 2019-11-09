@@ -1215,7 +1215,7 @@ GameObject:
   - component: {fileID: 394502826}
   - component: {fileID: 394502828}
   m_Layer: 0
-  m_Name: StartObject
+  m_Name: MazeMgrStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15428,6 +15428,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2687154789300030240}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &953614001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4074403457482276260, guid: 402bc47b0b216e143ab7d78828c54b71,
+    type: 3}
+  m_PrefabInstance: {fileID: 743822068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &953614002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953614001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09ce6b8d14db20269ac89fe05975554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1194558541
 GameObject:
   m_ObjectHideFlags: 0
@@ -41157,7 +41175,7 @@ GameObject:
   - component: {fileID: 1538084242}
   - component: {fileID: 1538084244}
   m_Layer: 0
-  m_Name: StopObject
+  m_Name: MazeMgrStop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41239,7 +41257,7 @@ GameObject:
   - component: {fileID: 1698073111}
   - component: {fileID: 1698073112}
   m_Layer: 0
-  m_Name: StartStopObject
+  m_Name: MazeMgr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
