@@ -9,6 +9,9 @@ public class MemoryTile : MonoBehaviour
     public Sprite cardBack;
     public static GameObject lastCardFlipped;
     public static GameObject prevCard;
+    public GameObject player;
+    public GameObject table;
+    public static int matches = 0;
     public static int wrongMatch = 0;
     public static double consci = 1.00;
 
@@ -40,9 +43,14 @@ public class MemoryTile : MonoBehaviour
         if (prevCard) {
             // if the cards match
             if (lastCardFlipped.GetComponent<SpriteRenderer>().sprite == prevCard.GetComponent<SpriteRenderer>().sprite) {
+                matches++;
                 // make the cards disappear if right match
                 lastCardFlipped.gameObject.SetActive(false);
                 prevCard.SetActive(false);
+                if (matches == 6) {
+                    table.transform.localScale = new Vector3(1, 1, 1);
+                    player.SetActive(true);
+                }
             }  else {
                 wrongMatch++; // add to the wrong match count
                 Debug.Log("Wrong Match = " + wrongMatch);
