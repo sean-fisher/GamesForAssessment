@@ -32,7 +32,12 @@ public class AllGameStats {
 public class MetricsManager
 {
     static MetricsManager singleton;
-    public static MetricsManager Singleton() {return singleton;}
+    public static MetricsManager Singleton() {
+        if (singleton == null) {
+            singleton = new MetricsManager();
+        }
+        return singleton;
+    }
 
     AllGameStats stats;
 

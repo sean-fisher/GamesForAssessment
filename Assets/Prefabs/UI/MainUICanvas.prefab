@@ -51,7 +51,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contentText: {fileID: 6982693058675747677}
-  baseTypeSpeed: 50
+  baseTypeSpeed: 10
+  fastTypeSpeed: 100
 --- !u!1 &6982693058453263938
 GameObject:
   m_ObjectHideFlags: 0

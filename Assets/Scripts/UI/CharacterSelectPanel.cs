@@ -8,10 +8,12 @@ public class CharacterSelectPanel : MonoBehaviour
     public Animator spriteAnimator;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI descriptionText;
+    public CharacterData characterData;
 
     public void Initialize(CharacterData data) {
-        spriteAnimator.runtimeAnimatorController = data.animControler;
+        spriteAnimator.runtimeAnimatorController = data.animController;
         nameText.text = data.name;
+        characterData = data;
         //descriptionText.text = data.description;
     }
 

@@ -6940,8 +6940,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b797194994f86bf409619bb0abcbd686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCharacterPrefab: {fileID: 0}
-  MainUIPrefab: {fileID: 0}
+  PlayerCharacterPrefab: {fileID: 8881935014166533774, guid: 7de876c6bed2ae042a3b4f03d97b90ee,
+    type: 3}
+  MainUIPrefab: {fileID: 8981666747655906244, guid: b0d63fb95865fd942b087f47a01f49fe,
+    type: 3}
+  ActivePlayerCharacter: {fileID: 0}
   gameTimeoutTime: 300
 --- !u!4 &2056583853
 Transform:
@@ -7184,33 +7187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1040550453, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 6586815544308170364, guid: 8a884eebf52015341aced4a8a1d17fa5,
-        type: 3}
-    - target: {fileID: 1040550453, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 886695012092200041, guid: 7de876c6bed2ae042a3b4f03d97b90ee,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 22100000, guid: 46096f6a1892ef944952933966c3a143,
-        type: 2}
-    - target: {fileID: 924887194, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 924887194, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 924887194, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
 --- !u!1001 &4074403458397139907
@@ -7443,6 +7419,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Welcome to the Town Center.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: fastTypeSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: baseTypeSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d63fb95865fd942b087f47a01f49fe, type: 3}
