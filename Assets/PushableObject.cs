@@ -7,8 +7,6 @@ public class PushableObject : MonoBehaviour {
     public bool complete = false;
     private bool pushing = false;
 
-    void Start() {}
-
     void OnCollisionEnter2D(Collision2D other) {
         // If the block puzzle is complete, don't waste time and let the player continue to push
         // the block around
@@ -26,9 +24,9 @@ public class PushableObject : MonoBehaviour {
                 var mask = LayerMask.GetMask("Default");
 
                 // If the player character has a greater delta in the x direction, then the player
-                // is pushing the block to the left or right, so we want to lerp along x axis. If 
+                // is pushing the block to the left or right, so we want to lerp along x axis. If
                 // the delta is greater in the y direction, then they want to push the block on the
-                // y axis. 
+                // y axis.
                 if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y)) {
                     // Find the direction along the x (left or right) and create a unit vector that
                     // goes to the left or right. Send a raycast in that direction for 100 units. If
@@ -81,7 +79,7 @@ public class PushableObject : MonoBehaviour {
         }
 
         // The loop above doesn't actually fully move the block to the coords we want, it moves it
-        // to just before it, so we lerp the last step to our destination. 
+        // to just before it, so we lerp the last step to our destination.
         transform.position = Vector2.Lerp(transform.position, destination, 1f);
         // Flip the pushing flag again, now the block can be pushed again.
         this.pushing = false;
