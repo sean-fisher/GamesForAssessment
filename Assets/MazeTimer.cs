@@ -9,7 +9,11 @@ public class MazeTimer : MonoBehaviour {
     int span;
     bool finished = false;
 
-    void Start() {}
+    void Start() {
+        if (GameObject.FindObjectOfType<MazeTimer>() != null) {
+            Destroy(this.gameObject);
+        }
+    }
     // Update is called once per frame
     void Update() {}
 

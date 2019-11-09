@@ -5,7 +5,11 @@ using UnityEngine;
 public class MazeStop : MonoBehaviour {
     // Start is called before the first frame update
     float endTime;
-    void Start() {}
+    void Start() {
+        if (GameObject.FindObjectOfType<MazeTimer>() != null) {
+            Destroy(this.gameObject);
+        }
+    }
     // Update is called once per frame
     void Update() {}
 
