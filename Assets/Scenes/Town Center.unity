@@ -7189,12 +7189,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6586815544308170364, guid: 8a884eebf52015341aced4a8a1d17fa5,
         type: 3}
+    - target: {fileID: 1040550453, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 886695012092200041, guid: 7de876c6bed2ae042a3b4f03d97b90ee,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: 41dc709079af04a469185a395e3f92eb,
         type: 2}
+    - target: {fileID: 924887194, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 924887194, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 924887194, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de876c6bed2ae042a3b4f03d97b90ee, type: 3}
 --- !u!1001 &4074403458397139907
