@@ -9,10 +9,11 @@ public class GameManager : MonoBehaviour
     public MainUI MainUIPrefab;
 
     static GameManager singleton;
+    public static GameManager Singleton() {return singleton;}
     MetricsManager metricsManager;
 
     // Instances of those prefabs
-    PlayerCharacter ActivePlayerCharacter;
+    public PlayerCharacter ActivePlayerCharacter;
     MainUI MainUI;
 
     // Seconds before the game forcibly ends

@@ -16,9 +16,18 @@ public class PlayerCharacter : MonoBehaviour
     public Pickupable pickedUpItem;
     public Usable objectToUse;
 
+    static PlayerCharacter singleton;
 
 
     void Awake() {
+
+        if (singleton == null) {
+            singleton = this;
+        } else {
+            Destroy(this.gameObject);
+            return;
+        }
+
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
     }
@@ -27,6 +36,10 @@ public class PlayerCharacter : MonoBehaviour
     void Start()
     {
         
+    }
+
+    public void Initialize(CharacterData data) {
+        anim.runtimeAnimatorController = data.animController;
     }
 
     // Update is called once per frame
