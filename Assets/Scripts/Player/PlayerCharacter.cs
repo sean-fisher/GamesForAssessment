@@ -24,8 +24,8 @@ public class PlayerCharacter : MonoBehaviour
         if (singleton == null) {
             singleton = this;
         } else {
-            Destroy(this.gameObject);
-            return;
+            //Destroy(this.gameObject);
+            //return;
         }
 
         rb = GetComponent<Rigidbody2D>();
