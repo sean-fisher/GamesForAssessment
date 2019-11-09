@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public MainUI MainUIPrefab;
 
     static GameManager singleton;
+    MetricsManager metricsManager;
 
     // Instances of those prefabs
     PlayerCharacter ActivePlayerCharacter;
@@ -51,6 +52,9 @@ public class GameManager : MonoBehaviour
                 // Do any UI initialization here
             }
         }
+
+        metricsManager = new MetricsManager();
+        metricsManager.Initialize();
 
         MapLayout.LoadMapFile();
     }

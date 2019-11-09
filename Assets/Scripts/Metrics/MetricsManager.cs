@@ -29,7 +29,7 @@ public class AllGameStats {
     public float mazeTime;
 }
 
-public class MetricsManager : MonoBehaviour
+public class MetricsManager
 {
     static MetricsManager singleton;
     public static MetricsManager Singleton() {return singleton;}
@@ -41,6 +41,8 @@ public class MetricsManager : MonoBehaviour
             singleton = this;
             stats = new AllGameStats();
             stats.roomStatsDict = new Dictionary<string, RoomStats>();
+        } else {
+            //Destroy(this);
         }
     }
 
@@ -50,17 +52,5 @@ public class MetricsManager : MonoBehaviour
         }
         stats.roomStatsDict[sceneName].timeSpentInRoom = stats.roomStatsDict[sceneName].timeSpentInRoom + time;
         Debug.Log("Time spent in " + sceneName + ": " + stats.roomStatsDict[sceneName].timeSpentInRoom);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Initialize();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

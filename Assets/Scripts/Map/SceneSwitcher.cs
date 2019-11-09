@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class SceneSwitcher : MonoBehaviour
 {
     static SceneSwitcher singleton;
-    public static SceneSwitcher Singleton() {return singleton;}
+    public static SceneSwitcher Singleton() {
+        return singleton;
+    }
 
     System.DateTime timeEnteredCurrentRoom;
     string currentSceneName;
@@ -16,6 +18,7 @@ public class SceneSwitcher : MonoBehaviour
     void Start()
     {
         if (singleton == null) {
+            Debug.Log("Set up sceneswitcher singleton");
             singleton = this;
             timeEnteredCurrentRoom = System.DateTime.Now;
             currentSceneName = SceneManager.GetActiveScene().name;
