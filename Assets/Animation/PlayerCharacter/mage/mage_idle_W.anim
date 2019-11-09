@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mage_idle_N
+  m_Name: mage_idle_W
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1122353702388440875, guid: 1cf1fcded747fa147b453301c820a87c,
+      value: {fileID: 4445906209134194194, guid: 198096d1f6edcd448ab9deed1d31f6f9,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -41,7 +41,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1122353702388440875, guid: 1cf1fcded747fa147b453301c820a87c, type: 3}
+    - {fileID: 4445906209134194194, guid: 198096d1f6edcd448ab9deed1d31f6f9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
