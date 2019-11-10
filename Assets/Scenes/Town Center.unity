@@ -1974,7 +1974,7 @@ Tilemap:
   - first: {x: 2, y: -1, z: 0}
     second:
       m_TileIndex: 10
-      m_TileSpriteIndex: 30
+      m_TileSpriteIndex: 32
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2001,7 +2001,7 @@ Tilemap:
   - first: {x: 6, y: -1, z: 0}
     second:
       m_TileIndex: 9
-      m_TileSpriteIndex: 29
+      m_TileSpriteIndex: 31
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2019,7 +2019,7 @@ Tilemap:
   - first: {x: -6, y: 0, z: 0}
     second:
       m_TileIndex: 22
-      m_TileSpriteIndex: 28
+      m_TileSpriteIndex: 30
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2028,7 +2028,7 @@ Tilemap:
   - first: {x: -5, y: 0, z: 0}
     second:
       m_TileIndex: 23
-      m_TileSpriteIndex: 27
+      m_TileSpriteIndex: 29
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2037,7 +2037,7 @@ Tilemap:
   - first: {x: -4, y: 0, z: 0}
     second:
       m_TileIndex: 24
-      m_TileSpriteIndex: 26
+      m_TileSpriteIndex: 28
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2046,7 +2046,7 @@ Tilemap:
   - first: {x: 2, y: 0, z: 0}
     second:
       m_TileIndex: 12
-      m_TileSpriteIndex: 25
+      m_TileSpriteIndex: 27
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2073,7 +2073,7 @@ Tilemap:
   - first: {x: 5, y: 0, z: 0}
     second:
       m_TileIndex: 7
-      m_TileSpriteIndex: 24
+      m_TileSpriteIndex: 26
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2082,7 +2082,7 @@ Tilemap:
   - first: {x: 6, y: 0, z: 0}
     second:
       m_TileIndex: 8
-      m_TileSpriteIndex: 23
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2235,7 +2235,7 @@ Tilemap:
   - first: {x: -9, y: 3, z: 0}
     second:
       m_TileIndex: 2
-      m_TileSpriteIndex: 22
+      m_TileSpriteIndex: 24
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2244,7 +2244,7 @@ Tilemap:
   - first: {x: -8, y: 3, z: 0}
     second:
       m_TileIndex: 4
-      m_TileSpriteIndex: 16
+      m_TileSpriteIndex: 23
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2334,7 +2334,7 @@ Tilemap:
   - first: {x: -9, y: 4, z: 0}
     second:
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 22
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2343,7 +2343,7 @@ Tilemap:
   - first: {x: -8, y: 4, z: 0}
     second:
       m_TileIndex: 3
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2916,17 +2916,15 @@ Tilemap:
       type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -268417370581588493, guid: 6c15ff27605addd4c88c4883f6a06ae8,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -7513665022201822933, guid: 6c15ff27605addd4c88c4883f6a06ae8,
       type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: -6066690719168885099, guid: 6c15ff27605addd4c88c4883f6a06ae8,
-      type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -1972277865442308324, guid: 6c15ff27605addd4c88c4883f6a06ae8,
+    m_Data: {fileID: -268417370581588493, guid: 6c15ff27605addd4c88c4883f6a06ae8,
       type: 3}
   - m_RefCount: 6
     m_Data: {fileID: -8224092743703233229, guid: 6c15ff27605addd4c88c4883f6a06ae8,
@@ -2942,6 +2940,12 @@ Tilemap:
       type: 3}
   - m_RefCount: 16
     m_Data: {fileID: 6976835635757252638, guid: 6c15ff27605addd4c88c4883f6a06ae8,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -6066690719168885099, guid: 6c15ff27605addd4c88c4883f6a06ae8,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -1972277865442308324, guid: 6c15ff27605addd4c88c4883f6a06ae8,
       type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 2305674269248664799, guid: 6c15ff27605addd4c88c4883f6a06ae8,
@@ -2968,10 +2972,6 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1500661385638063036, guid: 6c15ff27605addd4c88c4883f6a06ae8,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 7
     m_Data: {fileID: -6584498108876401854, guid: 6c15ff27605addd4c88c4883f6a06ae8,
       type: 3}
@@ -8278,11 +8278,11 @@ MonoBehaviour:
   - If you get lost, just make your way back here. This is a great place to start.
   - By the way, have you seen our bulletin board? You can check out all the important
     announcements and fun things to do!
-  - Don't forget to pop into the store. If you have coins, that is.
-  - Do you have any coins? You can earn some coins if you check out that bulletin
-    board.
-  - Try doing all of the things in order!
-  - Come find me again if you need help. Ta-ta!
+  - It also has some important tasks that you might want to complete while you're
+    in town.
+  - You can click on the task and it'll take you directly to that part of town!
+  - Anyway, feel free to explore the town and wander around. I'm always here if you
+    need to chat! I love to chat.
   stopsPlayerWhileReading: 1
 --- !u!61 &2139969773
 BoxCollider2D:
