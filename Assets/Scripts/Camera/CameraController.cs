@@ -9,10 +9,22 @@ public class CameraController : MonoBehaviour
     public Vector2 cameraBounds;
     public Transform thingToFollow;
 
+    static CameraController singleton;
+    public static CameraController Singleton() {return singleton;}
+
+    void Awake() {
+        if (singleton == null) {
+            //singleton = this;
+        } else {
+            //Destroy(this.gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerCharacter pc = PlayerCharacter.Singleton();
+        thingToFollow = pc.transform;
     }
 
     // Update is called once per frame

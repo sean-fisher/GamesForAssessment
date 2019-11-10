@@ -17,6 +17,7 @@ public class PlayerCharacter : MonoBehaviour
     public Usable objectToUse;
 
     static PlayerCharacter singleton;
+    public static PlayerCharacter Singleton() {return singleton;}
 
 
     void Awake() {
@@ -35,7 +36,7 @@ public class PlayerCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject.FindObjectOfType<CameraController>().thingToFollow = transform;
     }
 
     public void Initialize(CharacterData data) {

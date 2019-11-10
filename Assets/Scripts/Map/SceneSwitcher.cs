@@ -45,6 +45,7 @@ public class SceneSwitcher : MonoBehaviour
         MetricsManager.Singleton().AddRoomTime(
             currentSceneName, 
             (float) System.DateTime.Now.Subtract(timeEnteredCurrentRoom).TotalSeconds);
+        timeEnteredCurrentRoom = System.DateTime.Now;
 
         currentSceneName = sceneName;
         SceneManager.LoadScene(sceneName);
@@ -58,16 +59,17 @@ public class SceneSwitcher : MonoBehaviour
         
         Loadzone whereToLoad = FindLoadzoneToSpawnAt(lastSceneName, currentSceneName);
         //whereToLoad.gameObject.SetActive(false);
-        GameObject.FindObjectOfType<PlayerCharacter>().transform.position = whereToLoad.exitPosition;
+        PlayerCharacter.Singleton().transform.position = whereToLoad.exitPosition;
         SceneManager.sceneLoaded -= PlacePlayerAfterLoadNewScene;
     }
 
     public static Loadzone FindLoadzoneToSpawnAt(string sceneEnteredFrom, string currentSceneName) {
         var zones = GameObject.FindObjectsOfType<Loadzone>();
+        Loadzone loadZoneSpecifying = null;
         foreach (Loadzone zone in zones) {
             if (zone.loadSpecifiedRoomInsteadOfCardinal) {
                 if (sceneEnteredFrom == zone.SceneToLoad) {
-                    return zone;
+                    loadZoneSpecifying = zone;
                 }
             } else {
                 
@@ -77,7 +79,7 @@ public class SceneSwitcher : MonoBehaviour
                 }
             }
         }
-        return null;
+        return loadZoneSpecifying;
     }
 
     public void GotoShopScene()
