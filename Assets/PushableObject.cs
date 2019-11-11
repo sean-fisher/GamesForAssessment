@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PushableObject : MonoBehaviour {
     public Vector2 goal;
+    public Vector2 resetPos;
+    public PuzzleMgr puzzleManager;
     public bool complete = false;
     private bool pushing = false;
 
@@ -56,6 +58,16 @@ public class PushableObject : MonoBehaviour {
         }
     }
 
+    // Reset the puzzle to its initial state
+    public void ResetPuzzle() {
+        // If the reset position exists and the current position isn't the same as the reset position
+        // (the puzzle is already reset), reset the block to some position. 
+        if (resetPos != null && (Vector3)resetPos != this.transform.position) {
+            this.transform.position = (Vector3)resetPos;
+            puzzleManager.ResetPuzzle();
+        }
+    }
+
     IEnumerator Push(Vector2 destination) {
         // If goal is not null and the destination we're lerping to is our goal, then the puzzle is
         // finished, so set the bool and prevent the block from being pushed any further.
@@ -83,5 +95,6 @@ public class PushableObject : MonoBehaviour {
         transform.position = Vector2.Lerp(transform.position, destination, 1f);
         // Flip the pushing flag again, now the block can be pushed again.
         this.pushing = false;
+        puzzleManager.Move();
     }
 }

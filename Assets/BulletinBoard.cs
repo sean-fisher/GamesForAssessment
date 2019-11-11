@@ -24,6 +24,7 @@ public class BulletinBoard : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Enter trigger");
         if (collision.GetComponent<PlayerCharacter>())
         {
             BulletinPanel.SetActive(true);
