@@ -6,6 +6,8 @@ public class Sign : Interactable
 {
     public string[] dialogueToDisplay;
     public bool stopsPlayerWhileReading = true;
+    public static double agreeable = 1.00;
+
 
     public override void StartInteraction(GameObject interactor)
     {
@@ -15,6 +17,12 @@ public class Sign : Interactable
         if (pc)
         {
             pc.controlDisabled = true;
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                agreeable -= 0.10;
+                Debug.Log("Agreeableness score: " + agreeable);
+            }
+
         }
 
         GameManager.GetMainUI().DisplayDialogue(GetTextToDisplay());

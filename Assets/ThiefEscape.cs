@@ -3,8 +3,8 @@ using System.Collections;
 
 public class ThiefEscape : MonoBehaviour
 {
-    private Vector3 pos1 = new Vector3(4, -2, 0);
-    private Vector3 pos2 = new Vector3(8, -2, 0);
+    private Vector3 pos1 = new Vector3(-2, -2, 0);
+    private Vector3 pos2 = new Vector3(9, -2, 0);
     public float speed = 1.0f;
     private bool nocollision = true;
     //private string collidedobject;
@@ -28,6 +28,23 @@ public class ThiefEscape : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
             nocollision = false;
+
+            ////Stop rotating
+            //rbdy.angularVelocity = Vector3.zero;
+
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collide)
+    {
+        if (collide.gameObject.name == "PlayerCharacter")
+        {
+            //Rigidbody rbdy = collision.gameObject.GetComponent<Rigidbody>();
+
+            //Stop Moving/Translating
+            //GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+
+            nocollision = true;
 
             ////Stop rotating
             //rbdy.angularVelocity = Vector3.zero;
