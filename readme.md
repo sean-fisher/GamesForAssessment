@@ -1,3 +1,21 @@
+# Release Notes
+## New Software Features for this Release (v1.0)
+
+Since this is the first release of the game, there are several new features for this release.  A title screen opens the game up and then a character selection appears upon starting the game. Once you select your character, you start off in the town square. In the town square, there is a bulletin board that can take you directly to other rooms to complete games/quests, or you can rome through the game to different rooms completing quests as you go. With each minigame we have developed a scoring system that keeps track of various personality traits for the player.
+
+The game can be completed by finishing all the tasks (successfully or unsuccessfully). Upon completion, the  results screen should appear, with the ability to view results as a 6-factor HEXACO score.
+ 
+## Bug Fixes Made Since the Last Release
+Since this is the first released version of the game, there were no bugs that were fixed from a previous version.
+ 
+## Known Bugs and Defects
+In our original iteration plan, we thought that there would be time to run a pilot study of the game. As the semester progressed, there were setbacks and roadblocks so we never got the chance to run a pilot study. The following issues will be fixed very soon.
+- Issues with persistence across loading zones
+- HEXACO Report functionality not complete
+- Characters do not have descriptions of personalities yet
+- Not all action measures are accessible by the personality assessment script yet
+
+
 # Install Guide
 
 ## Prerequisites:
