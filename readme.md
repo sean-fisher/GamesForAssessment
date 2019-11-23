@@ -21,12 +21,16 @@ This project does not require installation.
 
 ## Run Instructions:
 
-Double click the executable that was in your build or download folder (e.g. GamesForAssessment.exe on Windows).
+Double click the executable that is in your build or download folder (e.g. GamesForAssessment.exe on Windows).
 
 ## Troubleshooting
 
 If you have trouble building the project, try these:
+
   Check your Unity version is 2019.2.4f1
+  
   Your platform is Windows or Mac
+  
   You have selected the correct target platform (make sure you use x86_64 or 64-bit for 64-bit Windows machines)
+  
 We have not encountered any issues with starting the game. If you have any, please create an issue or send us a message!
