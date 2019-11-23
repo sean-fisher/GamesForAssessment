@@ -2,7 +2,7 @@
 
 ## Prerequisites:
 A Window or Mac PC is required to build and run the project. Unity projects can typically be built for and run on Linux and other platforms, but we do not officially support these platforms due to insufficient testing.
-A minimal install of Unity version 2019.2.41f with the build tools for the desired platform is required. This can be installed via Unity Hub, which can be downloaded at https://unity3d.com/get-unity/download. Newer versions of Unity will likely work as well but might have varying results.
+A minimal install of Unity version 2019.2.4f1 with the build tools for the desired platform is required. This can be installed via Unity Hub, which can be downloaded at https://unity3d.com/get-unity/download. Newer versions of Unity will likely work as well but might have varying results.
 
 ## Dependent Libraries:
 
@@ -22,3 +22,11 @@ This project does not require installation.
 ## Run Instructions:
 
 Double click the executable that was in your build or download folder (e.g. GamesForAssessment.exe on Windows).
+
+## Troubleshooting
+
+If you have trouble building the project, try these:
+  Check your Unity version is 2019.2.4f1
+  Your platform is Windows or Mac
+  You have selected the correct target platform (make sure you use x86_64 or 64-bit for 64-bit Windows machines)
+We have not encountered any issues with starting the game. If you have any, please create an issue or send us a message!
