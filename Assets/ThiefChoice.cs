@@ -31,6 +31,7 @@ public class ThiefChoice : MonoBehaviour
             {
                 ChoicePanel.SetActive(true);
                 notanswered = false;
+                GetComponent<ThiefEscape>().nocollision = false;
             }
         }
     }

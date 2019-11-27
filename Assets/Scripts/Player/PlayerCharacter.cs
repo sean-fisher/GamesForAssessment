@@ -36,7 +36,10 @@ public class PlayerCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.FindObjectOfType<CameraController>().thingToFollow = transform;
+        CameraController cc = GameObject.FindObjectOfType<CameraController>();
+        if (cc!= null) {
+            cc.thingToFollow = transform;
+        }
     }
 
     public void Initialize(CharacterData data) {

@@ -187,16 +187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4074403457482276267, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4074403457482276267, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
         type: 3}
       propertyPath: SceneToLoad
@@ -206,6 +196,16 @@ PrefabInstance:
         type: 3}
       propertyPath: loadSpecifiedRoomInsteadOfCardinal
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074403457482276267, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074403457482276267, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8983338605740514678, guid: 402bc47b0b216e143ab7d78828c54b71,
         type: 3}
@@ -2611,8 +2611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d1cfd4cc9ad4866837e1527f53f11d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TurnedInThiefPanel: {fileID: 0}
-  HelpedThiefPanel: {fileID: 0}
+  TurnedInThiefPanel: {fileID: 489246163}
+  HelpedThiefPanel: {fileID: 1935524370}
 --- !u!1 &730872731
 GameObject:
   m_ObjectHideFlags: 0
@@ -5969,6 +5969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  nocollision: 1
 --- !u!61 &1824575166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6894,6 +6895,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6982693058675747677, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: m_Text
+      value: Welcome to the Town Center.
+      objectReference: {fileID: 0}
     - target: {fileID: 6982693058675747678, guid: b0d63fb95865fd942b087f47a01f49fe,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -6923,11 +6929,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6982693058675747677, guid: b0d63fb95865fd942b087f47a01f49fe,
-        type: 3}
-      propertyPath: m_Text
-      value: Welcome to the Town Center.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d63fb95865fd942b087f47a01f49fe, type: 3}

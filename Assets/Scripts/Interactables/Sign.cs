@@ -25,8 +25,10 @@ public class Sign : Interactable
 
         }
 
-        GameManager.GetMainUI().DisplayDialogue(GetTextToDisplay());
-        GameManager.GetMainUI().onFinishDialogue += EndInteraction;
+        MainUI ui = GameObject.FindObjectOfType<MainUI>();
+
+        ui.DisplayDialogue(GetTextToDisplay());
+        ui.onFinishDialogue += EndInteraction;
     }
 
     public override void EndInteraction()

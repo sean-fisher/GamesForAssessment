@@ -6,7 +6,7 @@ public class ThiefEscape : MonoBehaviour
     private Vector3 pos1 = new Vector3(-2, -2, 0);
     private Vector3 pos2 = new Vector3(9, -2, 0);
     public float speed = 1.0f;
-    private bool nocollision = true;
+    public bool nocollision = true;
     //private string collidedobject;
 
     void Update()
@@ -18,9 +18,9 @@ public class ThiefEscape : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D collide)
+    void OnTriggerEnter2D(Collider2D collide)
     {
-        if (collide.gameObject.name == "PlayerCharacter")
+        if (collide.gameObject.GetComponent<PlayerCharacter>() != null)
         {
             //Rigidbody rbdy = collision.gameObject.GetComponent<Rigidbody>();
 
@@ -35,9 +35,9 @@ public class ThiefEscape : MonoBehaviour
         }
     }
 
-    void OnCollisionExit2D(Collision2D collide)
+    void OnTriggerExit2D(Collider2D collide)
     {
-        if (collide.gameObject.name == "PlayerCharacter")
+        if (collide.gameObject.GetComponent<PlayerCharacter>() != null)
         {
             //Rigidbody rbdy = collision.gameObject.GetComponent<Rigidbody>();
 
