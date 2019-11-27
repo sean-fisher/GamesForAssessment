@@ -484,6 +484,7 @@ MonoBehaviour:
   - They're running out the door with our coins!
   - Will you help me catch them?
   stopsPlayerWhileReading: 1
+  destroyOnFinish: 1
 --- !u!61 &408330941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6649,6 +6650,7 @@ MonoBehaviour:
   - You not only stopped that thief and turned them in, but you saved my shop!
   - You're a kind and honest person. Kudos to you!
   stopsPlayerWhileReading: 1
+  destroyOnFinish: 0
 --- !u!61 &2139969773
 BoxCollider2D:
   m_ObjectHideFlags: 0

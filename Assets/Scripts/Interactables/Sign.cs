@@ -8,6 +8,8 @@ public class Sign : Interactable
     public bool stopsPlayerWhileReading = true;
     public static double agreeable = 1.00;
 
+    public  bool destroyOnFinish;
+
 
     public override void StartInteraction(GameObject interactor)
     {
@@ -39,6 +41,10 @@ public class Sign : Interactable
         if (pc)
         {
             pc.controlDisabled = false;
+        }
+
+        if (destroyOnFinish) {
+            Destroy(this.gameObject);
         }
     }
 
