@@ -41,6 +41,9 @@ public class SceneSwitcher : MonoBehaviour
 
     public void SwitchToScene(string sceneName) {
 
+        if (sceneName.EndsWith("\n") || sceneName.EndsWith("\r")) {
+            sceneName = sceneName.Substring(0, sceneName.Length - 1);
+        }
         lastSceneName = SceneManager.GetActiveScene().name;
         MetricsManager.Singleton().AddRoomTime(
             currentSceneName, 
