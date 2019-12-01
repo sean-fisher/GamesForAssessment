@@ -75,8 +75,8 @@ public class SceneSwitcher : MonoBehaviour
                     loadZoneSpecifying = zone;
                 }
             } else {
-                
-                if (sceneEnteredFrom == MapLayout.GetRoomNextTo(currentSceneName, zone.whichSideOfRoom)) {
+                string rnt = MapLayout.GetRoomNextTo(currentSceneName, zone.whichSideOfRoom);
+                if (sceneEnteredFrom == rnt) {
                     //GetOppositeCardinal(zone.whichSideOfRoom)) {
                     return zone;
                 }

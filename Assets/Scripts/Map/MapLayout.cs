@@ -36,8 +36,12 @@ public class MapLayout : MonoBehaviour
                     if (rooms.Count - 1 < r) {
                         rooms.Add(new List<string>());
                     }
+                    string rn = roomName;
+                    if (roomName.EndsWith("\n") || roomName.EndsWith("\r")) {
+                        rn = roomName.Substring(0, roomName.Length -1);
+                    }
 
-                    rooms[r].Add(roomName);
+                    rooms[r].Add(rn);
                     c++;
                 }
                 if (c > maxWidth) {
@@ -52,7 +56,11 @@ public class MapLayout : MonoBehaviour
             foreach (var row in rooms) {
                 int c = 0;
                 foreach (var room in row) {
-                    roomArray[r,c] = room;
+                    string rn = room;
+                    if (rn.EndsWith("\n") || rn.EndsWith("\r")) {
+                        rn = rn.Substring(0, rn.Length -1);
+                    }
+                    roomArray[r,c] = rn;
                     c++;
                 }
                 r++;

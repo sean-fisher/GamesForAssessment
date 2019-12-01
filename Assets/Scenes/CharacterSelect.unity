@@ -619,22 +619,28 @@ MonoBehaviour:
   descriptionText: {fileID: 1745385919}
   characters:
   - name: Healer
-    description: Personality description
+    description: The Healer is always there to help others and always tries to think
+      about the effects any actions will have.
     animController: {fileID: 9100000, guid: 392723e4204ee9744bdc4d031436a5b3, type: 2}
-  - name: Mage
-    description: Personality description
+  - name: Magician
+    description: The Magician is book smart and like to think of solutions to problems
+      thoughfully before acting.
     animController: {fileID: 22100000, guid: 731333c2614544f44a8fb6d4f8fc12fd, type: 2}
   - name: Ninja
-    description: Personality description
+    description: The ninja is always quick to act and is clever enough to figure things
+      out on-the-fly.
     animController: {fileID: 22100000, guid: 41dc709079af04a469185a395e3f92eb, type: 2}
   - name: Ranger
-    description: Personality description
+    description: The Ranger loves animals and the outdoors, and is good at dealing
+      with problems in unique environments.
     animController: {fileID: 22100000, guid: f61d4a79378e9ab4597620a08545e289, type: 2}
-  - name: Old Man
-    description: Personality description
+  - name: Wise Man
+    description: The Wise Man likes to take a step back from problems and instead
+      teaches others so they can learn.
     animController: {fileID: 22100000, guid: 3687c3ec4bbd83544b084bcc48649fa4, type: 2}
   - name: Warrior
-    description: Personality description
+    description: The Warrior is very honest and courageous, and is always willing
+      to go up against any challenge.
     animController: {fileID: 22100000, guid: 46096f6a1892ef944952933966c3a143, type: 2}
 --- !u!1 &1375031047
 GameObject:
@@ -841,8 +847,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
