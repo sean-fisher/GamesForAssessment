@@ -7217,16 +7217,6 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: SceneToLoad
-      value: Shop
-      objectReference: {fileID: 0}
-    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: loadSpecifiedRoomInsteadOfCardinal
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8983338605740514678, guid: 402bc47b0b216e143ab7d78828c54b71,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7236,6 +7226,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -2.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: loadSpecifiedRoomInsteadOfCardinal
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 402bc47b0b216e143ab7d78828c54b71, type: 3}
@@ -8373,6 +8373,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 408009237515029489, guid: be83dca2c1374d24d9dfc61037b7124f,
+        type: 3}
+      propertyPath: gameTimeoutTime
+      value: 240
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be83dca2c1374d24d9dfc61037b7124f, type: 3}
 --- !u!1001 &2687154789300030240
@@ -8544,21 +8549,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
-        type: 3}
-      propertyPath: fastTypeSpeed
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
-        type: 3}
-      propertyPath: baseTypeSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6982693058675747677, guid: b0d63fb95865fd942b087f47a01f49fe,
-        type: 3}
-      propertyPath: m_Text
-      value: Welcome to the Town Center.
-      objectReference: {fileID: 0}
     - target: {fileID: 6982693058453263998, guid: b0d63fb95865fd942b087f47a01f49fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8669,6 +8659,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: Welcome to the Town Center.
       objectReference: {fileID: 0}
+    - target: {fileID: 6982693058675747677, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: m_Text
+      value: Welcome to the Town Center.
+      objectReference: {fileID: 0}
     - target: {fileID: 6982693058675747678, guid: b0d63fb95865fd942b087f47a01f49fe,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -8698,6 +8693,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: fastTypeSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: baseTypeSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965483301206688769, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d63fb95865fd942b087f47a01f49fe, type: 3}
