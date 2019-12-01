@@ -39,7 +39,6 @@ public class MazeTimer : MonoBehaviour {
             this.finished = true;
             
             GameManager.Singleton().mazeComplete = true;
-            GameManager.Singleton().CheckComplete();
         }
     }
 }

@@ -54,6 +54,7 @@ public class MemoryTile : MonoBehaviour
                     GameManager.Singleton().matchComplete = true;
                     GameManager.Singleton().CheckComplete();
                 }
+                GameManager.Singleton().matchComplete = true;
             }  else {
                 wrongMatch++; // add to the wrong match count
                 Debug.Log("Wrong Match = " + wrongMatch);

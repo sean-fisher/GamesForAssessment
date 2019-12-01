@@ -64186,6 +64186,21 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: baseTypeSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965483301206688769, guid: b0d63fb95865fd942b087f47a01f49fe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4824477958732045724, guid: b0d63fb95865fd942b087f47a01f49fe,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -64215,16 +64230,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -34
-      objectReference: {fileID: 0}
-    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6468371256226775817, guid: b0d63fb95865fd942b087f47a01f49fe,
-        type: 3}
-      propertyPath: baseTypeSpeed
-      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6982693059218598255, guid: b0d63fb95865fd942b087f47a01f49fe,
         type: 3}
@@ -65979,12 +65984,12 @@ PrefabInstance:
     - target: {fileID: 8751814388328096853, guid: 7fe291c4061214ae887a811d9f951886,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8751814388328096853, guid: 7fe291c4061214ae887a811d9f951886,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.92
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe291c4061214ae887a811d9f951886, type: 3}

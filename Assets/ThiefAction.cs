@@ -42,6 +42,7 @@ public class ThiefAction : MonoBehaviour
         //catchThiefPanel.gameObject.SetActive(false);
         //HelpedThiefPanel.SetActive(true);
 
+        GameManager.Singleton().thiefComplete = true;
     }
 
     public void GetRidOfThief()
@@ -53,7 +54,6 @@ public class ThiefAction : MonoBehaviour
         //TurnedInThiefPanel.SetActive(true);
         
         GameManager.Singleton().thiefComplete = true;
-        GameManager.Singleton().CheckComplete();
     }
 
 
