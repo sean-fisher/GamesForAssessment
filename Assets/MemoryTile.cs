@@ -52,7 +52,6 @@ public class MemoryTile : MonoBehaviour
                     player.SetActive(true);
                     
                     GameManager.Singleton().matchComplete = true;
-                    GameManager.Singleton().CheckComplete();
                 }
                 GameManager.Singleton().matchComplete = true;
             }  else {
