@@ -14931,16 +14931,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.95
       objectReference: {fileID: 0}
-    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: loadSpecifiedRoomInsteadOfCardinal
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: SceneToLoad
-      value: Block Puzzle
-      objectReference: {fileID: 0}
     - target: {fileID: 4074403457482276267, guid: 402bc47b0b216e143ab7d78828c54b71,
         type: 3}
       propertyPath: m_Size.x
@@ -14955,6 +14945,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: loadSpecifiedRoomInsteadOfCardinal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Block Puzzle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 402bc47b0b216e143ab7d78828c54b71, type: 3}
@@ -15017,8 +15017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6363f7a3cd3b0204fadf3d4f093ad6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: -20.9, y: -14.7}
-  cameraBounds: {x: 42.8, y: 29.25}
+  startPosition: {x: -22.9, y: -15.7}
+  cameraBounds: {x: 46.8, y: 31.25}
 --- !u!4 &888368949
 Transform:
   m_ObjectHideFlags: 0
@@ -40632,11 +40632,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3.555
       objectReference: {fileID: 0}
-    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: SceneToLoad
-      value: SampleScene2
-      objectReference: {fileID: 0}
     - target: {fileID: 8983338605740514678, guid: 402bc47b0b216e143ab7d78828c54b71,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40646,6 +40641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: SampleScene2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 402bc47b0b216e143ab7d78828c54b71, type: 3}
@@ -40789,16 +40789,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.95
       objectReference: {fileID: 0}
-    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: loadSpecifiedRoomInsteadOfCardinal
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: SceneToLoad
-      value: Town Center
-      objectReference: {fileID: 0}
     - target: {fileID: 4074403457482276267, guid: 402bc47b0b216e143ab7d78828c54b71,
         type: 3}
       propertyPath: m_Size.x
@@ -40813,6 +40803,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: loadSpecifiedRoomInsteadOfCardinal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Town Center
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 402bc47b0b216e143ab7d78828c54b71, type: 3}
@@ -43043,11 +43043,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3.555
       objectReference: {fileID: 0}
-    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
-        type: 3}
-      propertyPath: SceneToLoad
-      value: SampleScene2
-      objectReference: {fileID: 0}
     - target: {fileID: 8983338605740514678, guid: 402bc47b0b216e143ab7d78828c54b71,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43057,6 +43052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 362509396380316425, guid: 402bc47b0b216e143ab7d78828c54b71,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: SampleScene2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 402bc47b0b216e143ab7d78828c54b71, type: 3}

@@ -16,8 +16,6 @@ public class PenCollider : MonoBehaviour {
     int thisPenIndex;
     void Start()
     {
-      thisPenIndex = allPenScores.Count;
-      allPenScores.Add(0);
     }
 
     public float GetAverageScore() {
