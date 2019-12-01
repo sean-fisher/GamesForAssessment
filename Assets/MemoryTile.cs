@@ -50,6 +50,9 @@ public class MemoryTile : MonoBehaviour
                 if (matches == 6) {
                     table.transform.localScale = new Vector3(1, 1, 1);
                     player.SetActive(true);
+                    
+                    GameManager.Singleton().matchComplete = true;
+                    GameManager.Singleton().CheckComplete();
                 }
             }  else {
                 wrongMatch++; // add to the wrong match count

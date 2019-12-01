@@ -41,5 +41,8 @@ public class Timer : MonoBehaviour
 
         MetricsManager.Singleton().stats.bhicken_sorted_score = summ;
         MetricsManager.Singleton().stats.bhicken_orderliness = summ;
+
+        GameManager.Singleton().bhickenComplete = true;
+        GameManager.Singleton().CheckComplete();
     }
 }

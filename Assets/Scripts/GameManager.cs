@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
 
     bool gameOver = false;
 
+    public bool bhickenComplete;
+    public bool mazeComplete;
+    public bool thiefComplete;
+    public bool matchComplete;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -84,5 +89,13 @@ public class GameManager : MonoBehaviour
         gameOver = true;
         Debug.Log("Ending Game");
         SceneSwitcher.Singleton().SwitchToScene("GameOver");
+    }
+
+    public bool CheckComplete() {
+        if (mazeComplete && matchComplete && bhickenComplete && thiefComplete) {
+            EndGame();
+            return true;
+        }
+        return false;
     }
 }
