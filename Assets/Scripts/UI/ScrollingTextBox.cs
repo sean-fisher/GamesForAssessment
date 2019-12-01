@@ -18,6 +18,8 @@ public class ScrollingTextBox : MonoBehaviour
     bool textFinishedScrolling;
     bool isFastScrolling;
 
+    public static int numTimesAdvancedText = 0;
+
     public delegate void OnFinishDialogueDelFunc();
     public OnFinishDialogueDelFunc onFinishDialogue;
 
@@ -36,6 +38,7 @@ public class ScrollingTextBox : MonoBehaviour
                 AdvanceText();
             } else {
                 isFastScrolling = true;
+                numTimesAdvancedText++;
             }
         }
         if  (Input.GetButtonUp("Submit")) {

@@ -39,7 +39,7 @@ public class MetricsManager
         return singleton;
     }
 
-    AllGameStats stats;
+    public AllGameStats stats;
 
     public void Initialize() {
         if (singleton == null) {

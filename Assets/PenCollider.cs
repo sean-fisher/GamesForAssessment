@@ -5,14 +5,23 @@ using UnityEngine;
 public class PenCollider : MonoBehaviour {
     // Start is called before the first frame update
 
+    static List<int> allPenScores;
+
     int redScore;
     int blueScore;
     int yellowScore;
     int pinkScore;
 
+
+    int thisPenIndex;
     void Start()
     {
-      
+      thisPenIndex = allPenScores.Count;
+      allPenScores.Add(0);
+    }
+
+    public float GetAverageScore() {
+        return (redScore + blueScore + yellowScore + pinkScore) / 4f;
     }
 
     // Update is called once per frame

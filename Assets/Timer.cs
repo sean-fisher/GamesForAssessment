@@ -30,5 +30,16 @@ public class Timer : MonoBehaviour
     {
         Debug.Log("Ending Game");
         InputManager.ifFinished = true;
+
+        var pens = GameObject.FindObjectsOfType<PenCollider>();
+        float summ = 0;
+        foreach (PenCollider pen in pens) {
+            summ += pen.GetAverageScore();
+        }
+        summ /= pens.Length * 6f;
+        Bhicken.bhickenScore = summ;
+
+        MetricsManager.Singleton().stats.bhicken_sorted_score = summ;
+        MetricsManager.Singleton().stats.bhicken_orderliness = summ;
     }
 }

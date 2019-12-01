@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Bhicken : MonoBehaviour
 {
+    public static float bhickenScore;
 
     private bool dirRight = true;
     public float distanceToTravel = 2.0f;

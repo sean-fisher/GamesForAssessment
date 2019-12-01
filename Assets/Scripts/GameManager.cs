@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public float gameTimeoutTime = 300;
     float timeSinceGameStart;
 
+    bool gameOver = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,15 +68,21 @@ public class GameManager : MonoBehaviour
     }
 
     void Update() {
-        timeSinceGameStart += Time.deltaTime;
+        if (!gameOver) 
+        {
 
-        if (timeSinceGameStart > gameTimeoutTime) {
-            Debug.Log("Time over!");
-            EndGame();
+            timeSinceGameStart += Time.deltaTime;
+
+            if (timeSinceGameStart > gameTimeoutTime) {
+                Debug.Log("Time over!");
+                EndGame();
+            }
         }
     }
 
     void EndGame() {
+        gameOver = true;
         Debug.Log("Ending Game");
+        SceneSwitcher.Singleton().SwitchToScene("GameOver");
     }
 }
