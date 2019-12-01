@@ -89,6 +89,7 @@ public class HexacoMeasurer : IPersonalityMeasurer
 
         opennessScore = (Mathf.Abs(stats.matchingScore) * matchingScore_weight +
             Mathf.Abs(roomTimeScore) * avgRoomTime_weight) / (matchingScore_weight + avgRoomTime_weight);
+        if (float.IsNaN(opennessScore)) opennessScore = 0;
 
         // for the purposes of demoing, we fake values if they have come out to be 0
         // This may happen if the player doesn't do everything
