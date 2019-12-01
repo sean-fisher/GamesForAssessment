@@ -51,6 +51,9 @@ public class ThiefAction : MonoBehaviour
         choiceMade = true;
         //catchThiefPanel.gameObject.SetActive(false);
         //TurnedInThiefPanel.SetActive(true);
+        
+        GameManager.Singleton().thiefComplete = true;
+        GameManager.Singleton().CheckComplete();
     }
 
 
