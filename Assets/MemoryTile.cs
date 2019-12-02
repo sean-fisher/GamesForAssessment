@@ -49,7 +49,7 @@ public class MemoryTile : MonoBehaviour
                 prevCard.SetActive(false);
                 if (matches == 6) {
                     table.transform.localScale = new Vector3(1, 1, 1);
-                    player.SetActive(true);
+                    GameManager.Singleton().ActivePlayerCharacter.gameObject.SetActive(true);
                     
                     GameManager.Singleton().matchComplete = true;
                 }

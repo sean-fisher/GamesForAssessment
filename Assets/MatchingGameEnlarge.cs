@@ -28,7 +28,8 @@ public class MatchingGameEnlarge : MonoBehaviour
             table.transform.localScale = new Vector3(7, 7, 1);
             Cards.SetActive(true);
             table.GetComponent<BoxCollider2D>().enabled = false;
-            player.SetActive(false);
+            GameManager.Singleton().matchComplete = true;
+            GameManager.Singleton().ActivePlayerCharacter.gameObject.SetActive(false);
         } 
     }
 }
