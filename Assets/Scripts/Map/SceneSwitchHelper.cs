@@ -40,4 +40,9 @@ public class SceneSwitchHelper : MonoBehaviour
     {
         SceneManager.LoadScene("Park");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

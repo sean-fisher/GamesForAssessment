@@ -8400,7 +8400,6 @@ MonoBehaviour:
     announcements and fun things to do!
   - It also has some important tasks that you might want to complete while you're
     in town.
-  - You can click on the task and it'll take you directly to that part of town!
   - Talk to me when you think you've finished everything.
   stopsPlayerWhileReading: 1
   destroyOnFinish: 0
